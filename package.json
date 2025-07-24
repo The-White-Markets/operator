@@ -1,0 +1,21 @@
+{
+  "name": "task-manager-mvp",
+  "version": "1.0.0",
+  "description": "A full-stack task management MVP application",
+  "scripts": {
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "server:dev": "cd server && npm run dev",
+    "client:dev": "cd client && npm run dev",
+    "server:install": "cd server && npm install",
+    "client:install": "cd client && npm install",
+    "install:all": "npm install && npm run server:install && npm run client:install",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": ["task-management", "fullstack", "react", "nodejs", "mvp"],
+  "author": "MVP Builder",
+  "license": "MIT"
+}
