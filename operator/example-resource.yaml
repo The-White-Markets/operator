@@ -1,0 +1,8 @@
+apiVersion: example.com/v1
+kind: MyResource
+metadata:
+  name: example-myresource
+  namespace: default
+spec:
+  replicas: 3
+  image: "nginx:1.20"
